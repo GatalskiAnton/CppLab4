@@ -1,4 +1,0 @@
-﻿  CppLab4.cpp
-C:\Users\ag629\source\repos\CppLab4\CppLab4\CppLab4.cpp(55,23): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\ag629\source\repos\CppLab4\CppLab4\CppLab4.cpp(30): warning C4715: _strchr: значение возвращается не при всех путях выполнения
-  CppLab4.vcxproj -> C:\Users\ag629\source\repos\CppLab4\Debug\CppLab4.exe
