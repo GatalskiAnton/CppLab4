@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <stdlib.h>
 #include <vector>
 using namespace std;
@@ -10,7 +10,7 @@ int _strlen(const char* string) {
     }
     return i;
 }
-char* _strchr( char* string, int c) {
+char* _strchr(char* string, int c) {
     int check = 0;
     for (int i = 0; i < _strlen(string); i++)
     {
@@ -43,15 +43,17 @@ void NumberOfInsertion() {
     }
     vector<int> array;
     array.push_back(0);
+    int firstCharElement = 127;
+    int lastCharElement = 32;
     for (int i = 0; i < _strlen(string); i++)
     {
-        if (string[i] == ' ' && string[i + 1] < 127 && string[i + 1] > 32)
+        if (string[i] == ' ' && string[i + 1] < firstCharElement && string[i + 1] > lastCharElement)
         {
             array.push_back(i);
         }
     }
     int check = 0;
-    for (int i = 0; i < array.size()- 1; i++)
+    for (int i = 0; i < array.size() - 1; i++)
     {
         for (int j = array[i]; j <= array[i + 1]; j++)
         {
@@ -73,13 +75,13 @@ void NumberOfInsertion() {
             count++;
         }
     }
-    cout <<  count;
+    cout << count;
 }
 int main()
 {
     cout << "TASK 1\n";
     cout << "Enter string\n";
-    char *str = new char[300];
+    char* str = new char[300];
     cin >> str;
     cout << "Enter number\n";
     int c;
@@ -89,4 +91,3 @@ int main()
     cout << "TASK 2\n";
     NumberOfInsertion();
 }
-
